@@ -208,3 +208,6 @@ __marimo__/
 data/
 classifier/saved_model/
 classifier/checkpoints/
+meditron-7b-chat.Q4_K_M.gguf
+Llama-3.2-3B-Instruct-Q4_K_S.gguf
+rag/vector_index/

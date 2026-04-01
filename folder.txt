@@ -19,13 +19,13 @@ SafeHealth/
 ├── rag/
 │   ├── ingest.py                       # reads medical docs, chunks, embeds
 │   ├── vectorstore.py                  # builds and saves FAISS/ChromaDB index
-│   ├── retriever.py                    # handles similarity search at query time
+│   ├── retriever.py                    # handles similarity search and threshold scope proxy
 │   └── vector_index/                   # saved vector store files
 │
 ├── safety/
 │   ├── layer1_rules.py                 # regex and keyword pattern filter
 │   ├── layer2_classifier.py            # calls classifier from classifier/predict.py
-│   ├── layer3_scope.py                 # BART-MNLI zero-shot scope validator
+│   ├── guard.py                        # main orchestrator to chain layers 1 to 3
 │   └── output_validator.py             # citation check and hallucination probe
 │
 ├── llm/

@@ -15,3 +15,8 @@ pyarrow>=14.0.0       # for reading parquet files
 
 # Utilities
 tqdm>=4.65.0
+
+# RAG & LLM (Added for CPU-based pipeline)
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+llama-cpp-python>=0.2.20
